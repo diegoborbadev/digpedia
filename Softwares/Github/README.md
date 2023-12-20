@@ -1,3 +1,3 @@
 # Summary
 
-- [Github](GitHubFlow.md)
+- [Github Flow](GitHubFlow.md)
