@@ -1,4 +1,4 @@
 # Summary
 
-- [Java](Java/Summary.md)
-- [Python](Python/Summary.md)
+- [***Java***](Java/Summary.md)
+- [***Python***](Python/Summary.md)
