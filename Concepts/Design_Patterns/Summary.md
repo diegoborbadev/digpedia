@@ -1,0 +1,3 @@
+# Summary
+
+- [*Factory*](Factory.md)
