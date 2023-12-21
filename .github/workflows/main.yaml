@@ -1,4 +1,4 @@
- # This name will appear in the Actions tab of your repository
+# This name will appear in the Actions
 name: Generate Summaries
 
 on:
@@ -19,13 +19,22 @@ jobs:
 
     # Steps list
     steps:
-    - uses: actions/checkout@v4
+    
+    # Checkout the repository content
+    - name: Checkout repository
+      uses: actions/checkout@v4
 
-    # TODO: RUN SCRIPT TO GENERATE SUMMARIES
-    # - name: Generate summaries
-    #   run: |
-    #     touch Summary.md
+    # Setup python
+    - name: Setup python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
 
+    # Generate/Update summaries
+    - name: Generate summaries
+      run: python Script.py
+
+    # Commit all changes
     - name: Commit changes
       run: |
         git config user.name 'github-actions[bot]'

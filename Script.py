@@ -1,10 +1,11 @@
 import os
 
+# IMPORTANT: This script only works in linux systems
 if __name__ == "__main__":
     # Walk through all directories and files
     for root, dirs, files in os.walk('.'):
         # Ignore hidden directories
-        if root.startswith('.\\.'):
+        if root.startswith('./.'):
             continue
 
         # Filepath to summary file
