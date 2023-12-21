@@ -1,0 +1,38 @@
+ # This name will appear in the Actions tab of your repository
+name: Generate Summaries
+
+on:
+  # Allows to manually run the job(s) at any time
+  workflow_dispatch:
+  
+  # Run on every push on the master branch
+  push:
+    branches:
+    - main
+
+# Jobs list
+jobs:
+  # Job name
+  generate-summaries:
+    # Where the workflow will run
+    runs-on: ubuntu-latest 
+
+    # Steps list
+    steps:
+    - uses: actions/checkout@v4
+
+    # TODO: RUN SCRIPT TO GENERATE SUMMARIES
+    # - name: Generate summaries
+    #   run: |
+    #     touch Summary.md
+
+    - name: Commit changes
+      run: |
+        git config user.name 'github-actions[bot]'
+        git config user.email 'github-actions[bot]@users.noreply.github.com'
+        git add .
+        git commit -m "Updated summaries" || exit 0
+        git push origin main
+      
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
