@@ -19,7 +19,7 @@ if __name__ == "__main__":
                 # Ignore hidden directories
                 if not dir.startswith('.'):
                     # Add to summary
-                    summary_file.write(f"- [***{dir}***]({dir}/Summary.md)\n")
+                    summary_file.write(f"- [***{dir.replace('_', ' ')}***]({dir}/Summary.md)\n")
 
             # Add files to summary
             for file in files:
