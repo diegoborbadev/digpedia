@@ -16,6 +16,7 @@ if __name__ == "__main__":
 
             # Check if README.md is in files
             if 'README.md' in files:
+                # Bring README to the front
                 files.insert(0, files.pop(files.index('README.md')))
 
             # Add files to summary
