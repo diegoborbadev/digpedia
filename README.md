@@ -36,9 +36,9 @@ For example:
 ```
 
 Considering this structure, the content of `Topic1/Summary.md` will be:
-- [*README*]()
-- [*Topic1 Article*]()
-- [***Subtopic1***]()
+- [*README*](README.md#summaries)
+- [*Topic1 Article*](README.md#summaries)
+- [***Subtopic1***](README.md#summaries)
 
 But, the content of `Topic2/Summary.md` will be:
-- [*Topic2 Article*]()
+- [*Topic2 Article*](README.md#summaries)
