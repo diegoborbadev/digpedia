@@ -4,6 +4,8 @@
 
 [Click here](Summary.md) to access summary; more explanations below.
 
+Future articles/topics listed in the [issues](https://github.com/diegoborbadev/digpedia/issues).
+
 ## Structure
 The file structure is based on 3 things:
 - **Topics:** Each folder is one ***topic***; a ***topic*** can have ***subtopics***, each ***subtopic*** can have its own ***subtopics***, and so on.
