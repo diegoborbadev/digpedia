@@ -1,12 +1,13 @@
 # How it works
 *Merge* will **combine multiple sequences of commits into one unified history**, in the most frequent use cases, `git merge` is used to combine two branches.
 
-## Before merge
+## Combining two branches
+### Before merge
 Before performing a merge there are a couple of preparation steps to take to ensure the merge goes smoothly:
 - Ensure that `HEAD` is pointing to the correct *merge-receiving branch*, if it isn't, you can [*switch*](Basic_Commands.md#switch-branch) to it.
 - Make sure the receiving branch and the merging branch are up-to-date with the latest remote changes. See: [*Pull*](Basic_Commands.md#pull-from-a-remote-repository) & [*Fetch*](Basic_Commands.md#fetch-from-a-remote-repository).
 
-## Combining two branches 
+### Performing the merge
 Assume the following history exists and the current branch is `master`:
 ```bash
       A---B---C dev

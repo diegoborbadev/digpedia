@@ -25,6 +25,12 @@ $ git pull
 $ git merge <branch_name>
 ```
 
+### Fetch 
+#### Fetch default remote repository
+```bash
+$ git fetch
+```
+
 # Branch
 
 ### Create a new branch
