@@ -34,8 +34,14 @@ When you [*switch branches*](Basic_Commands.md#switch-branch), this moves `HEAD`
 
 It’s important to note that **when you switch branches in Git, files in your working directory will change**. If you switch to an older branch, your working directory will be reverted to look like it did the last time you committed on that branch, and if *Git* cannot do it cleanly, it will not let you switch at all.
 
-<!-- ## What is a fork?  
-TODO -->
+## What is a fork? 
+When a new branch is created and commits are made on that branch, it creates a **separate line of development**, or a *fork* in the history. 
 
-<!-- ## What is a merge?
-TODO -->
+This allows developers to work on different features or fixes simultaneously without affecting the `main` line of development. Later, these branches can be *merged* back into the `main` line, combining the changes made.
+
+**Important:** The mean of *fork* is different in *GitHub*, see: [*What is a fork?*](../Github/README.md#what-is-a-fork)
+
+## What is a merge?
+Is *Git*'s way of putting a *forked history* back together again. *Merge* lets you **take the independent lines of development and integrate them into a single branch**.
+
+See: [*How to Merge*](How_To_Merge.md) & [*Merge Basic Commands*](Basic_Commands.md#merge)
