@@ -63,6 +63,12 @@ $ git switch <branch_name>
 ```bash
 $ git branch -d <branch_name>
 ```
+**Note:** You can use ´-D´ instead of ´-d´ to force delete a branch.
+
+### Delete a branch on github
+```bash
+$ git push origin :<branch_name>
+```
 
 ### Return to previously checked out branch
 ```bash
