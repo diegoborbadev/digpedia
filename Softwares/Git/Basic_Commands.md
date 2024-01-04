@@ -33,6 +33,11 @@ $ git fetch
 
 # Branch
 
+### See all the branches
+```bash
+$ git branch -a
+```
+
 ### Create a new branch
 #### Just create a new branch
 ```bash
@@ -42,6 +47,11 @@ $ git branch <branch_name>
 #### Create a new branch and switch
 ```bash
 $ git switch -c <branch_name>
+```
+
+### Push branch
+```bash
+$ git push origin <branch_name>
 ```
 
 ### Switch Branch
