@@ -65,6 +65,11 @@ git branch -d <branch_name>
 ```
 **Note:** You can use ´-D´ instead of ´-d´ to force delete a branch.
 
+### Delete all branches except one
+```bash
+git branch | grep -v "<branch_name>" | xargs git branch -D
+```
+
 ### Delete a branch on github
 ```bash
 git push origin :<branch_name>
