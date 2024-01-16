@@ -6,7 +6,7 @@ git init
 
 ### Clone an existing repository
 ```bash
-git clone <url>
+git clone <url> <new-directory-name>
 ```
 
 ### Fetch from a remote repository
