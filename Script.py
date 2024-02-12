@@ -8,6 +8,10 @@ if __name__ == "__main__":
         if root.startswith('./.'):
             continue
 
+        # Sort directories and files
+        dirs.sort(reverse=True)
+        files.sort(reverse=True)
+
         # Filepath to summary file
         summary_file_path = f'{root}/Summary.md'
         with open(summary_file_path, "w") as summary_file:
