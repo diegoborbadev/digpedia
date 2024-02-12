@@ -8,10 +8,6 @@ if __name__ == "__main__":
         if root.startswith('./.'):
             continue
 
-        # Sort directories and files
-        dirs.sort(reverse=True)
-        files.sort(reverse=True)
-
         # Filepath to summary file
         summary_file_path = f'{root}/Summary.md'
         with open(summary_file_path, "w") as summary_file:
@@ -24,7 +20,7 @@ if __name__ == "__main__":
                 files.insert(0, files.pop(files.index('README.md')))
 
             # Add files to summary
-            for file in files:
+            for file in sorted(files):
                 # Ignore specific files
                 if not (file == 'Summary.md' or file == 'Script.py'):
                     # Remove extension
@@ -37,7 +33,7 @@ if __name__ == "__main__":
                     summary_file.write(f"- [*{filename}*]({file})\n")
 
             # Add directories to summary
-            for dir in dirs:
+            for dir in sorted(dirs):
                 # Ignore hidden directories
                 if not dir.startswith('.'):
                     # Add to summary
