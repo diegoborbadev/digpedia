@@ -3,7 +3,7 @@ import os
 # IMPORTANT: This script only works in linux systems
 if __name__ == "__main__":
     # Walk through all directories and files
-    for root, dirs, files in os.walk('.'):
+    for root, dirs, files in os.walk('.', topdown=True):
         # Ignore hidden directories
         if root.startswith('./.'):
             continue
