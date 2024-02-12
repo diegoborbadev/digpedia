@@ -1,8 +1,8 @@
 # Summary
 
-- [*DIP*](DIP.md)
-- [*ISP*](ISP.md)
-- [*LSP*](LSP.md)
-- [*OCP*](OCP.md)
 - [*README*](README.md)
 - [*SRP*](SRP.md)
+- [*ISP*](ISP.md)
+- [*LSP*](LSP.md)
+- [*DIP*](DIP.md)
+- [*OCP*](OCP.md)
