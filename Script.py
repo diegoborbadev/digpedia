@@ -20,7 +20,7 @@ if __name__ == "__main__":
                 files.insert(0, files.pop(files.index('README.md')))
 
             # Add files to summary
-            for file in sorted(files):
+            for file in files:
                 # Ignore specific files
                 if not (file == 'Summary.md' or file == 'Script.py'):
                     # Remove extension
@@ -33,7 +33,7 @@ if __name__ == "__main__":
                     summary_file.write(f"- [*{filename}*]({file})\n")
 
             # Add directories to summary
-            for dir in sorted(dirs):
+            for dir in dirs:
                 # Ignore hidden directories
                 if not dir.startswith('.'):
                     # Add to summary
