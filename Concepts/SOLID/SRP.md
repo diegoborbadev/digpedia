@@ -1,4 +1,5 @@
 # Single-Responsibility Principle
+## What is SRP?
 This principle states that a class/method/interface **should only have one responsibility**. For example:
 
 ```java
@@ -53,3 +54,11 @@ public class BookPrinter {
 ```
 
 See the [*source code here*](https://github.com/diegoborbadev/solid-principles-java/tree/main/src/main/java/SRP).
+
+## Why is SRP important?
+The *SRP* is important because it **makes the code more readable, maintainable, and testable**. It also helps to avoid the [*God Object*](../Anti-patterns/God_Object.md) anti-pattern.
+
+### Hints:
+Try to describe the main responsibility of a class, method, or interface. If you **can't describe it in a single sentence, it may have more than one responsibility**.
+
+Also, try to write the name of the methods describing their responsibility.For example, if you have the `signUpAndLogin()` method, it probably violates the *SRP* principle.
