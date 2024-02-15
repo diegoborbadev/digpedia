@@ -1,0 +1,2 @@
+# What is a Anti-pattern?
+An *Anti-pattern* is just like a pattern, except that instead of a solution, it gives something that **looks superficially like a solution but isn't one**. *Anti-patterns* are **the opposite of best practice**, which is a solution that has been proven to be effective.
