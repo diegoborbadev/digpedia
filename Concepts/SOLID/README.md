@@ -1,7 +1,7 @@
 # What is SOLID?
 The *SOLID* principles were introduced by *Robert C. Martin (Uncle Bob)*  in his 2000 paper [*Design Principles and Design Patterns*](https://staff.cs.utu.fi/~jounsmed/doos_06/material/DesignPrinciplesAndPatterns.pdf), they are:
 
--**S**RP: [*The single-responsibility principle*](SRP.MD)  
+-**S**RP: [*The single-responsibility principle*](SRP.md)  
 -**O**CP: [*The open-closed principle*](OCP.md)  
 -**L**SP: [*The Liskov substitution principle*](LSP.md)  
 -**I**SP: [*The interface segregation principle*](ISP.md)  
