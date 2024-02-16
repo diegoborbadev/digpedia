@@ -61,4 +61,4 @@ The *SRP* is important because it **makes the code more readable, maintainable, 
 ### Hints:
 Try to describe the main responsibility of a class, method, or interface. If you **can't describe it in a single sentence, it may have more than one responsibility**.
 
-Also, try to write the name of the methods describing their responsibility.For example, if you have the `signUpAndLogin()` method, it probably violates the *SRP* principle.
+Also, try to write the name of the methods describing their responsibility. For example, if you have the `signUpAndLogin()` method, it probably violates the *SRP* principle.
