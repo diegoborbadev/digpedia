@@ -1,6 +1,6 @@
 # Open-Closed Principle
 ## What is OCP?
-The *Open-Closed Principle (OCP)* principle states that software entities **should be OPEN for extension, but CLOSED for modification**. This means that a component **should be easily extendable without modifying the component itself**. For example:
+The *Open-Closed Principle* states that software entities **should be OPEN for extension, but CLOSED for modification**. This means that a component **should be easily extendable without modifying the component itself**. For example:
 
 ```java
 public class PaymentManager {
