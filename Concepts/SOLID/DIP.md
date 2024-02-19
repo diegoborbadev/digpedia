@@ -48,3 +48,8 @@ public class ClassA {
 Now, `ClassA` is not directly dependent on `ClassB`, but rather on `InterfaceB`, the same goes for `ClassB`. This is the essence of *DIP*.
 
 See the [*source code here*](https://github.com/diegoborbadev/solid-principles-java/tree/main/src/main/java/DIP).
+
+## Why is the DIP important?
+When developing code for applications, it is common to organize our logic into multiple modules. However, this can lead to a codebase with dependencies. One of the motivations behind the *Dependency Inversion Principle* is to **prevent us from depending upon modules that often change**. Concrete classes often experience frequent modifications, whereas abstractions and interfaces are subject to less frequent changes. This approach simplifies tasks like bug fixing, code recompiling, or merging different branches.
+
+Nevertheless, the significance of *DIP* extends beyond this. It plays a pivotal role in achieving loosely coupled and maintainable systems, complementing concepts such as Polymorphism and Dependency Injection
