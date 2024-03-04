@@ -1,0 +1,2 @@
+# What is Lombok?
+Lombok is a library that helps to reduce boilerplate code in *Java* classes. It provides a set of annotations that can be used to **generate getters, setters, constructors, and other common methods**.
