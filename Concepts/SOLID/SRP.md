@@ -38,7 +38,7 @@ public class Book {
 }
 ```
 
-The `Book` class should only handle the book properties, but, it violates the *SRP* because it has **two responsibilities: managing the book properties and printing the text to the console**. The `isWordInText` method should be in a different class, for example, in a `BookPrinter` class:
+The `Book` class should only handle the book properties, but, it violates the *SRP* because it has **two responsibilities: managing the book properties and printing the text to the console**. The `printTextToConsole` method should be in a different class, for example, in a `BookPrinter` class:
 
 ```java
 public class BookPrinter {
